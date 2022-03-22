@@ -1,9 +1,9 @@
 import React from "react";
 import { ButtonEl } from "./styled";
 
-const Button = ({ hadnleBackClick }) => {
+const Button = () => {
   return (
-    <ButtonEl onClick={hadnleBackClick}>
+    <ButtonEl>
       <span>&#x2190;</span>
       <span>Back</span>
     </ButtonEl>

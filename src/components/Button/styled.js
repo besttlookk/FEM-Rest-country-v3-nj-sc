@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonEl = styled.button`
+export const ButtonEl = styled.span`
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 2rem;
@@ -10,8 +10,6 @@ export const ButtonEl = styled.button`
   background-color: ${({ theme }) => theme.headerBg};
   color: ${({ theme }) => theme.text};
   transition: 0.5s;
-  border: none;
-  outline: none;
   cursor: pointer;
 
   > span:last-child {

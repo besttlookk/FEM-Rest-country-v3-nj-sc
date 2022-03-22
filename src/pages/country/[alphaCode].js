@@ -33,7 +33,11 @@ const Detail = ({ country, borderCountries }) => {
       </Head>
       <div>
         {/* BACK BUTTON */}
-        <Button hadnleBackClick={() => router.back()} />
+        <Link href="/">
+          <a>
+            <Button />
+          </a>
+        </Link>
       </div>
 
       <DetailContainer key={country.alpha3Code}>
