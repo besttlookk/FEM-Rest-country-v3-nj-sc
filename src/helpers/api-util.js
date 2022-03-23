@@ -12,5 +12,3 @@ export async function getCountryDetail(code) {
 
   return data;
 }
-
-export async function getBorderCountries(code) {}
