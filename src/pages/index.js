@@ -18,7 +18,7 @@ export default function Home({ countiesArr }) {
     else if (option === "All" && searchInput !== "") {
       setFilteredCountries(
         countries.filter((country) =>
-          country.name.toLowerCase().includes(searchInput)
+          country.name.toLowerCase().includes(searchInput.toLowerCase())
         )
       );
     } else if (option !== "All" && searchInput === "") {
@@ -29,7 +29,7 @@ export default function Home({ countiesArr }) {
       setFilteredCountries(
         countries.filter((country) => {
           return (
-            country.name.toLowerCase().includes(searchInput) &&
+            country.name.toLowerCase().includes(searchInput.toLowerCase()) &&
             country.region === option
           );
         })
