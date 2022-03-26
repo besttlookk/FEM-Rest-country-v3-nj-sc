@@ -26,9 +26,22 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: inherit;
 }
 
+::-webkit-scrollbar {
+    width: 1rem;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: hsl(0, 0%, 52%);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color:hsl(0, 0%, 100%);
+    border-radius: .5rem;
+  }
+
 html {
   box-sizing: border-box;
   font-size: 100%;
+  scroll-behavior: smooth;
+
 }
 
 body {
